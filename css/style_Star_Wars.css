@@ -16,14 +16,16 @@ header, footer{
 }
 header{
     border-radius: 16px 16px 0 0;
+    position: relative;
 }
 h1{
     text-align: center;
     font-size: 3em;
-    padding: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
 }
 nav{
-    position: fixed;
+    position: sticky;
     top: 5px;
     left: 40px;
 }
@@ -42,14 +44,15 @@ nav ul li{
 }
 .left{
     float: left;
-    margin-right: 20px;
-    box-shadow: 6px 6px 12px white;
+    margin: 0.3rem 1.2rem 0 0;
+    width: 25%;
     line-height: 0;
 }
 .left img{
     width: 100%;
     height: auto;
     border: 1px solid black;
+    box-shadow: 0.6rem 0.6rem 0.6rem grey;
 }
 .right{
     float: right;
@@ -63,13 +66,20 @@ nav ul li{
 }
 .right img{
     float: left;
-    width: 33.333%;
+    width: 33%;
     height: auto;
     border: 2px solid black;
+    margin: calc(1% / 6);
+}
+.rounded-bottom-left{
+    border-bottom-left-radius: 14px;
+}
+.rounded-bottom-right{
+    border-bottom-right-radius: 14px;
 }
 .far-galaxy{
-    font-size: 1.5em;
-    line-height: 1.4;
+    font-size: 1.8em;
+    line-height: 1.5;
     text-align: justify;
 }
 div{
@@ -86,4 +96,5 @@ footer{
     border-radius: 0 0 16px 16px;
     clear: both;
     height: 100px;
+    position: relative;
 }
