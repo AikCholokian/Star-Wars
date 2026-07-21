@@ -71,41 +71,31 @@ nav ul li{
 /*    border: 2px solid black;*/
 /*    margin: calc(1% / 6);*/
 /*}*/
-/*.rounded-bottom-left{*/
-/*    border-bottom-left-radius: 14px;*/
-/*}*/
-/*.rounded-bottom-right{*/
-/*    border-bottom-right-radius: 14px;*/
-/*}*/
-.right table{
-    padding: 0;
-    display: inline-block;
-    width: 50%;
-    float: right;
-    border: 1px solid #eedb00;
-    border-radius: 0 0 16px 16px;
-}
-.right table h2{
-    text-align: center;
-}
-.right table td{
-    padding: 0;
-    text-align: justify;
-    display: block;
-    white-space: nowrap;
-    vertical-align: middle;
-    max-width: 100%;
-}
-.right table img{
-    display: inline-block;
-    width: 32.7%;
-    height: 100%;
-}
 .rounded-bottom-left{
     border-bottom-left-radius: 14px;
 }
 .rounded-bottom-right{
     border-bottom-right-radius: 14px;
+}
+
+.right{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    border-radius: 0 0 16px 16px;
+    border: 1px solid #eedb00;
+}
+.right h2{
+    width: 100%;
+    text-align: center;
+}
+.right img{
+    width: 33%;
+    height: auto;
+    margin: calc(1% / 6);
 }
 .far-galaxy{
     font-size: 1.8em;
