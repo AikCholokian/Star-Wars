@@ -3,10 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --primary-color: #eedb00;
+}
 body{
     font-family: 'Poller One', cursive;
     background-image: url('../images/sky.jpg');
-    color: #eedb00;
+    color: var(--primary-color);
     background-attachment: fixed;
     max-width: 1100px;
     margin: 0 auto;
@@ -54,23 +57,7 @@ nav ul li{
     border: 1px solid black;
     box-shadow: 0.6rem 0.6rem 0.6rem grey;
 }
-/*.right{*/
-/*    float: right;*/
-/*    text-align: center;*/
-/*    border-radius: 0 0 16px 16px;*/
-/*    border: 1px solid #eedb00;*/
-/*    margin-left: 1%;*/
-/*    overflow: hidden;*/
-/*    width: 50%;*/
-/*    height: auto;*/
-/*}*/
-/*.right img{*/
-/*    float: left;*/
-/*    width: 33%;*/
-/*    height: auto;*/
-/*    border: 2px solid black;*/
-/*    margin: calc(1% / 6);*/
-/*}*/
+
 .rounded-bottom-left{
     border-bottom-left-radius: 14px;
 }
@@ -81,21 +68,21 @@ nav ul li{
 .right{
     float: right;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: 50%;
     border-radius: 0 0 16px 16px;
-    border: 1px solid #eedb00;
+    border: 1px solid var(--primary-color);
 }
 .right h2{
     width: 100%;
     text-align: center;
+    flex-basis: 100%;
 }
 .right img{
     width: 33%;
     height: auto;
-    margin: calc(1% / 6);
+    margin: 1px 0;
 }
 .far-galaxy{
     font-size: 1.8em;
